@@ -1,6 +1,9 @@
 echo "Hello from ZSHRC"
 #set Variables 
 
+#Syntex highlighting for man pages using bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 #Change ZSH Options
 
 #Create Aliases
