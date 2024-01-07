@@ -10,23 +10,23 @@ brew install httpie
 
 #Installing casks
 echo "\n<<Installing casks>>\n"
-brew install --cask alt-tab
-brew install --cask dbngin
-brew install --cask discord
-brew install --cask docker
-brew install --cask firefox
-brew install --cask fliqlo
-brew install --cask folx
-brew install --cask google-chrome
-brew install --cask hiddenbar
-brew install --cask optimus-player
-brew install --cask postman
-brew install --cask raycast
-brew install --cask rectangle
-brew install --cask signal
-brew install --cask tableplus
-brew install --cask tg-pro
-brew install --cask visual-studio-code
-brew install --cask warp
+brew install --no-quarantine --cask alt-tab
+brew install --no-quarantine --cask dbngin
+brew install --no-quarantine --cask discord
+brew install --no-quarantine --cask docker
+brew install --no-quarantine --cask firefox
+brew install --no-quarantine --cask fliqlo
+brew install --no-quarantine --cask folx
+brew install --no-quarantine --cask google-chrome
+brew install --no-quarantine --cask hiddenbar
+brew install --no-quarantine --cask optimus-player
+brew install --no-quarantine --cask postman
+brew install --no-quarantine --cask raycast
+brew install --no-quarantine --cask rectangle
+brew install --no-quarantine --cask signal
+brew install --no-quarantine --cask tableplus
+brew install --no-quarantine --cask tg-pro
+brew install --no-quarantine --cask visual-studio-code
+brew install --no-quarantine --cask warp
 
 echo "\n<<<Ending Homebrew setup >>>\n"
