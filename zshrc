@@ -5,9 +5,10 @@ export HOMEBREW_CASK_OPTS=" --no-quarantine"
 #Change ZSH Options
 
 #Create Aliases
-alias ls="exa -laFh --git"
+alias ls="exa -laFhg --git"
 alias man=batman
-alias bat=batwatch
+
+alias grep=batgrep
 
 #Customize Promts
 PROMPT='
