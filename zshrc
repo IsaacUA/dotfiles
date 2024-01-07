@@ -7,7 +7,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 #Change ZSH Options
 
 #Create Aliases
-alias ls='ls -lAFhG'
+alias ls='exa -lFh'
 
 #Customize Promts
 PROMPT='
