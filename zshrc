@@ -1,4 +1,4 @@
-echo "Hello from ZSHRC"
+echo "Hello from zshrc"
 #set Variables 
 export HOMEBREW_CASK_OPTS=" --no-quarantine"
 
@@ -21,9 +21,11 @@ RPROMPT='%*'
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 #Write handy functions
-mkcd () {
+function mkcd () {
   mkdir -p "$@" && cd "$_"
 }
+
+
 
 #use ZSH plugins 
 

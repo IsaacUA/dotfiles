@@ -6,6 +6,13 @@
 # export HOMEBREW_CASK_OPTS="--no-quarantine"
 # https://github.com/Homebrew/homebrew-bundle/issues/474
 echo "\n<<<Starting Homebrew setup >>>\n"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+if exists brew; then
+    echo "Brew exists, skipping install"
+else
+    echo "Brew dosn't exist, continuing with install"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
 brew bundle --verbose
 echo "\n<<<Ending Homebrew setup >>>\n"
