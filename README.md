@@ -11,4 +11,5 @@ I'm learning about dot files at [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz)
 - Finder Show Path Bar
 - Trackpad (Three Finger Drag and Tap to Click)
 - Git (config and SSH)
+- Raycast (turn off Spotlight)
 
