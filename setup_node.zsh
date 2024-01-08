@@ -7,9 +7,15 @@
 # https://github.com/Homebrew/homebrew-bundle/issues/474
 echo "\n<<<Starting NODE setup >>>\n"
 
-if exists node; then
+if exists $N_PREFIX/bin/node; then
     echo "NODE $(node -v) & NPM $(npm --version) are already installed"
 else
     echo "Installing NODE & NPM with n..."
     n latest
 fi
+
+
+npm install -g nodemon
+npm install -g typescript
+echo "Global NPM packages installed:"
+npm list --global --depth=0
