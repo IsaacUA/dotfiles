@@ -7,6 +7,6 @@
 # https://github.com/Homebrew/homebrew-bundle/issues/474
 echo '\n<<<Starting ZSH setup >>>\n'
 echo '<<Enter sudo to edit /etc/shells>>'
-echo '/opt/homebrew/bin/zsh' | sudo tee -a '/etc/shells'
+echo '/opt/homebrew/bin/zsh' | sudo tee -a '/etc/shells' > /dev/null
 echi '<<Enter user password to change login shell>>'
 chsh -s '/opt/homebrew/bin/zsh'
