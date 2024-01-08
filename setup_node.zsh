@@ -8,16 +8,18 @@
 echo "\n<<<Starting NODE setup >>>\n"
 
 if exists $N_PREFIX/bin/node; then
-    echo "NODE $(node --version) & NPM $(npm --version) are already installed"
+  echo "Node $($N_PREFIX/bin/node --version) & NPM $($N_PREFIX/bin/npm --version) already installed with n"
 else
-    echo "Installing NODE & NPM with n..."
-    n latest
+  echo "Installing Node & NPM with n..."
+  n latest
+  n lts
 fi
 
-
+npm install -g yarn
 npm install -g nodemon
 npm install -g typescript
 npm install -g trash-cli
+
 
 echo "Global NPM packages installed:"
 npm list --global --depth=0
