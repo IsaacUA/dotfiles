@@ -1,7 +1,9 @@
 echo "Hello from zshrc"
 #set Variables 
-export HOMEBREW_CASK_OPTS=" --no-quarantine"
+export HOMEBREW_CASK_OPTS="--no-quarantine"
 export NULLCMD=bat
+export N_PREFIX="$HOME/.n"
+export PREFIX="$N_PREFIX"
 #Change ZSH Options
 
 #Create Aliases
@@ -20,6 +22,8 @@ RPROMPT='%*'
 
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:$N_PREFIX/bin"
+
 
 #Write handy functions
 function mkcd () {
