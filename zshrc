@@ -12,6 +12,7 @@ alias man=batman
 alias bbd='brew bundle dump -f --describe'
 alias grep=batgrep
 alias trail='<<<${(F)path}'
+alias rm=trash
 
 #Customize Promts
 PROMPT='
