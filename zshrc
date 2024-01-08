@@ -1,9 +1,5 @@
-echo "Hello from zshrc"
-#set Variables 
-export HOMEBREW_CASK_OPTS="--no-quarantine"
-export NULLCMD=bat
-export N_PREFIX="$HOME/.n"
-export PREFIX="$N_PREFIX"
+echo "[\e[31mInitializing zshrc\e[0m ]"
+
 #Change ZSH Options
 
 #Create Aliases
@@ -13,11 +9,18 @@ alias bbd='brew bundle dump -f --describe'
 alias grep=batgrep
 alias trail='<<<${(F)path}'
 alias rm=trash
+alias nano=micro
 
 #Customize Promts
-PROMPT='
-%1~ %L %# '
-RPROMPT='%*'
+
+# Set named color variables in the prompt
+# Define prompt color variables
+PROMPT_PARANTHESIS_COLOR='%F{orange}'
+PROMPT_VALUE_COLOR='%F{red}'
+PROMPT_RESET_COLOR='%f%b'  # Reset text formatting
+
+PROMPT="${PROMPT_PARANTHESIS_COLOR}[${PROMPT_VALUE_COLOR}%B%7~%b${PROMPT_PARANTHESIS_COLOR}]-[${PROMPT_VALUE_COLOR}%B%L%b${PROMPT_PARANTHESIS_COLOR}]-[${PROMPT_VALUE_COLOR}%B%#%b${PROMPT_PARANTHESIS_COLOR}]${PROMPT_RESET_COLOR} "
+RPROMPT="${PROMPT_PARANTHESIS_COLOR}[%*]${PROMPT_PARANTHESIS_COLOR}"
 
 #Add location to the path array variables
 typeset -U path
