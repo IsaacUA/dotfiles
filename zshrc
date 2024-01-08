@@ -19,10 +19,13 @@ PROMPT='
 %1~ %L %# '
 RPROMPT='%*'
 
-#Add location to the $PATH variables
-export PATH="$N_PREFIX/bin:$PATH"
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
+#Add location to the path array variables
+typeset -U path
+path=(
+  "$N_PREFIX/bin"
+  $path
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+)
 
 #Write handy functions
 function mkcd () {
