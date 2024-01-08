@@ -13,6 +13,8 @@ brew "httpie"
 brew "less"
 # Mac App Store command-line interface
 brew "mas"
+# Modern and intuitive terminal-based text editor
+brew "micro"
 # Node version management
 brew "n"
 # Free (GNU) replacement for the Pico text editor
