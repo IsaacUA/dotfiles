@@ -1,2 +1,3 @@
 Brewfile.lock.json
-config/raycast/config.json
+/config/raycast/config.json
+.DS_Store
