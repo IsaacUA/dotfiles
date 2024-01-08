@@ -9,6 +9,7 @@ alias ls="exa -laFhg --git"
 alias man=batman
 alias bbd="brew bundle dump -f --describe"
 alias grep=batgrep
+alias trail="<<<${(F)path}"
 
 #Customize Promts
 PROMPT='
