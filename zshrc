@@ -1,3 +1,4 @@
+
 #echo "[\e[31mInitializing zshrc\e[0m ]"
 
 #Change ZSH Options
@@ -13,14 +14,7 @@ alias rm=trash
 alias nano=micro
 alias vim=nvim
 alias fnm='find . -name 'node_modules' -type d -prune'
-
-# Promt 
-# - Initial setup
-set_prompt
-update_prompt
-# - Register function for directory changes
-autoload -U add-zsh-hook
-add-zsh-hook chpwd update_prompt
+alias fm="fzf --preview='bat --color=always --style=numbers {}' | xargs"
 
 #Add location to the path array variables
 typeset -U path
@@ -38,3 +32,4 @@ function mkcd () {
 #use ZSH plugins 
 
 #... other suprises
+eval "$(starship init zsh)"
