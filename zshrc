@@ -26,9 +26,6 @@ path=(
 )
 
 #Write handy functions
-function mkcd () {
-  mkdir -p "$@" && cd "$_"
-}
 
 #use ZSH plugins 
 
