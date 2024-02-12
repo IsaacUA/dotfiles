@@ -6,6 +6,7 @@
 #Create Aliases
 alias ls='exa -laFhg --git --icons'
 alias ~=cd ~
+alias ..=cd ..
 alias man=batman
 alias bbd='brew bundle dump -f --describe'
 alias grep=batgrep
