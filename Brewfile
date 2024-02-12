@@ -1,73 +1,94 @@
+tap "epk/epk"
 tap "eth-p/software"
 tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
 tap "homebrew/services"
-# Clone of cat(1) with syntax highlighting and Git integration
+tap "mongodb/brew"
 brew "bat"
-# Modern replacement for 'ls'
 brew "exa"
-# Distributed revision control system
+brew "fzf"
 brew "git"
-# User-friendly cURL replacement (command-line HTTP client)
+brew "go"
+brew "htop"
 brew "httpie"
-# Pager program similar to more
 brew "less"
-# Mac App Store command-line interface
 brew "mas"
-# Modern and intuitive terminal-based text editor
 brew "micro"
-# Node version management
 brew "n"
-# Free (GNU) replacement for the Pico text editor
 brew "nano"
-# Platform built on V8 to build network applications
-brew "node"
-# JavaScript package manager
+brew "neovim"
+brew "starship"
 brew "yarn"
-# UNIX shell (command interpreter)
 brew "zsh"
-# Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
-# Enable Windows-like alt-tab
+cask "alacritty"
 cask "alt-tab"
-# Database version management tool
-cask "dbngin"
-# Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
 cask "docker"
-# Web browser
 cask "firefox"
-# Flip clock screensaver
 cask "fliqlo"
-# Download manager with a torrent client
 cask "folx"
-# Git client focusing on productivity
+cask "font-jetbrains-mono-nerd-font"
+cask "font-sf-mono-nerd-font"
 cask "gitkraken"
-# Web browser
 cask "google-chrome"
-# Utility to hide menu bar items
 cask "hiddenbar"
-# Media player
+cask "microsoft-edge"
 cask "optimus-player"
-# Collaboration platform for API development
 cask "postman"
-# Control your tools with a few keystrokes
 cask "raycast"
-# Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-# Instant messaging application focusing on security
 cask "signal"
-# Native GUI tool for relational databases
 cask "tableplus"
-# Temperature monitoring, fan control and diagnostics
 cask "tg-pro"
-# Open-source code editor
 cask "visual-studio-code"
-# Rust-based terminal
 cask "warp"
 mas "ClearVPN", id: 1531601984
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+vscode "aaron-bond.better-comments"
+vscode "anuragsingk.anuragsingk-phpserver"
+vscode "bmewburn.vscode-intelephense-client"
+vscode "bradlc.vscode-tailwindcss"
+vscode "brapifra.phpserver"
+vscode "chakrounanas.turbo-console-log"
+vscode "cmstead.js-codeformer"
+vscode "dsznajder.es7-react-js-snippets"
+vscode "emmanuelbeziat.vscode-great-icons"
 vscode "entuent.fira-code-nerd-font"
+vscode "esbenp.prettier-vscode"
 vscode "file-icons.file-icons"
+vscode "formulahendry.auto-rename-tag"
+vscode "github.github-vscode-theme"
+vscode "glenn2223.live-sass"
+vscode "golang.go"
+vscode "hollowtree.vue-snippets"
 vscode "idbartosz.darkpp-italic"
+vscode "ionutvmi.path-autocomplete"
+vscode "janne252.fontawesome-autocomplete"
+vscode "jonkwheeler.styled-components-snippets"
+vscode "mehedidracula.php-namespace-resolver"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.autopep8"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode-remote.remote-containers"
+vscode "onecentlin.laravel-blade"
+vscode "onecentlin.laravel5-snippets"
+vscode "pnp.polacode"
+vscode "redhat.vscode-xml"
+vscode "ritwickdey.liveserver"
+vscode "seyyedkhandon.firacode"
+vscode "shufo.vscode-blade-formatter"
+vscode "steoates.autoimport"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "styled-components.vscode-styled-components"
+vscode "syler.sass-indented"
+vscode "tintrinh.php-refactor"
+vscode "vincaslt.highlight-matching-tag"
+vscode "vue.volar"
+vscode "wix.glean"
+vscode "wix.vscode-import-cost"
+vscode "xabikos.javascriptsnippets"
+vscode "xdebug.php-debug"
