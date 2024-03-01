@@ -1,3 +1,9 @@
 [user]
 	name = IsaacAzimovUA
 	email = 109369640+IsaacAzimovUA@users.noreply.github.com
+[core]
+	editor = code --wait
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false

@@ -6,10 +6,11 @@
 #Create Aliases
 alias ls='exa -laFhg --git --icons'
 alias ~=cd ~
-alias ..=cd ..
+alias ..="cd .."
 alias man=batman
 alias bbd='brew bundle dump -f --describe'
-alias grep=batgrep
+alias lzd=lazydocker
+alias gi=gitui
 alias trail='<<<${(F)path}'
 alias rm=trash
 alias nano=micro
@@ -31,3 +32,5 @@ path=(
 
 #... other suprises
 eval "$(starship init zsh)"
+
+PATH=~/.console-ninja/.bin:$PATH
