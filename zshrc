@@ -10,8 +10,8 @@ alias ..="cd .."
 alias man=batman
 alias bbd='brew bundle dump -f --describe'
 alias lzd=lazydocker
-alias gi=gitui
 alias trail='<<<${(F)path}'
+alias lzg=gitui
 alias rm=trash
 alias nano=micro
 alias vim=nvim
@@ -33,4 +33,4 @@ path=(
 #... other suprises
 eval "$(starship init zsh)"
 
-PATH=~/.console-ninja/.bin:$PATH
+
