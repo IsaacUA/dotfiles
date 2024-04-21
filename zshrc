@@ -34,3 +34,4 @@ path=(
 eval "$(starship init zsh)"
 
 
+export PATH="/opt/homebrew/opt/dotnet@6/bin:$PATH"
