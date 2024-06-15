@@ -4,7 +4,7 @@
 #Change ZSH Options
 
 #Create Aliases
-alias ls='exa -laFhg --git --icons'
+alias ls='eza -lahg --git --icons'
 alias ~=cd ~
 alias ..="cd .."
 alias man=batman
