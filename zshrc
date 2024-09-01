@@ -1,6 +1,6 @@
 
 #echo "[\e[31mInitializing zshrc\e[0m ]"
-
+fortune | cowsay
 #Change ZSH Options
 
 #Create Aliases
@@ -17,6 +17,7 @@ alias nano=micro
 alias vim=nvim
 alias fnm='find . -name 'node_modules' -type d -prune'
 alias fm="fzf --preview='bat --color=always --style=numbers {}' | xargs"
+alias python=python3
 
 #Add location to the path array variables
 typeset -U path
