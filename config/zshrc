@@ -1,0 +1,33 @@
+#Change ZSH Options
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$PATH
+export PATH=$ANDROID_HOME/emulator:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+#Create Aliases
+alias lls='eza -lahg --git --icons'
+alias bbd='brew bundle dump -f --describe'
+alias lzd=lazydocker
+alias trail='<<<${(F)path}'
+alias lzg=lazygit
+alias rm=trash
+alias nano=micro
+alias fnm='find . -name 'node_modules' -type d -prune'
+alias fm="fzf --preview='bat --color=always --style=numbers {}' | xargs"
+alias dst="~/Personal/lviv_districts/district_of.sh"
+alias lama=" ollama run deepseek-coder:6.7b"
+alias man=batman
+#Add location to the path array variables
+typeset -U path
+path=(
+  "$N_PREFIX/bin"
+  $path
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+)
+
+#Write handy functions
+
+#use ZSH plugins 
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+#... other suprises
+eval "$(starship init zsh)"
