@@ -10,18 +10,18 @@
     ~/.gitconfig: config/gitconfig
     ~/.vimrc: config/vimrc
     ~/.tmux.conf: config/tmux.conf
-    ~/Library/Application\ Support/com.mitchellh.ghostty/config: config/ghostty_config
+    "~/Library/Application\ Support/com.mitchellh.ghostty/config": config/ghostty_config
 
 - shell:
-    - command: ./setup_homebrew.zsh
+    - command: ./script/setup_homebrew.zsh
       stdin: true
       stdout: true
       stderr: true
-    - command: ./setup_zsh.zsh
+    - command: ./script/setup_zsh.zsh
       stdin: true
       stdout: true
       stderr: true
-    - command: ./setup_node.zsh
+    - command: ./script/setup_node.zsh
       stdin: true
       stdout: true
       stderr: true

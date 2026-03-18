@@ -1,10 +1,9 @@
-#set Variables 
+#set Variables
 export HOMEBREW_CASK_OPTS="--no-quarantine"
-export NULLCMD=bat
+export HOMEBREW_NO_ENV_HINTS=1
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX"
 
 function exists(){
-  #command -v similar to which
-  command -v $1 >/dev/null 2>&1
+  command -v "$1" >/dev/null 2>&1
 }
