@@ -12,10 +12,9 @@ else
   n lts
 fi
 
-# npm install -g yarn
-# npm install -g ts-node
-# npm install -g typescript
-# npm install -g trash-cli
+npm install -g ts-node
+npm install -g typescript
+npm install -g trash-cli
 
 echo "🌐 Global NPM packages installed:"
 npm list --global --depth=0
