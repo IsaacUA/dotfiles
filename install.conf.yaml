@@ -25,3 +25,7 @@
       stdin: true
       stdout: true
       stderr: true
+    - command: ./script/setup_macos.zsh
+      stdin: true
+      stdout: true
+      stderr: true
